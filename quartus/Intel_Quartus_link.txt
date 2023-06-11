@@ -1,0 +1,3 @@
+Link para download: https://www.intel.com/content/www/us/en/software-kit/660904/intel-quartus-prime-lite-edition-design-software-version-20-1-1-for-linux.html?
+
+Intel Quartus versão 20.1.1
