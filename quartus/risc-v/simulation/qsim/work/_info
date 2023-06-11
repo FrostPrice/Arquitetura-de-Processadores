@@ -1,0 +1,309 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\Workspace\FPGA\RISC_V_quartus13_1\simulation\qsim
+vadd_sub
+Z1 I@k[V5R:IR<1iO[>8Ah4mX0
+Z2 VV@b=_O`@0a]9b3=NJ?ZH40
+Z3 dD:\Workspace\FPGA\RISC_V_quartus13_1_05junho\simulation\qsim
+Z4 w1686095197
+Z5 8risc_v32i.vo
+Z6 Frisc_v32i.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|risc_v32i.vo|
+Z9 o-work work -O0
+Z10 !s100 mFVb@>Dg?6YVbGiCV8T7a1
+Z11 !s108 1686095198.114000
+Z12 !s107 risc_v32i.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vadd_sub_vlg_check_tst
+Z13 !s100 <T[F9Neo^>WBme45R]>e_3
+Z14 I]^kN9L7WfI]oz_E<Ih=F?2
+Z15 V2Xgi?Mo]h2WmEH:8;22:P3
+R3
+Z16 w1686095194
+Z17 8teste_add_sub.vwf.vt
+Z18 Fteste_add_sub.vwf.vt
+L0 61
+R7
+r1
+31
+Z19 !s108 1686095198.345000
+Z20 !s107 teste_add_sub.vwf.vt|
+Z21 !s90 -work|work|teste_add_sub.vwf.vt|
+R9
+!i10b 1
+!s85 0
+!s101 -O0
+vadd_sub_vlg_sample_tst
+Z22 !s100 h]f[9>oeY[JCo6X@hOim:3
+Z23 I=g51OTn]bM=@nPn9h]7;b3
+Z24 V6MW[gm0Z=WZY@k=z@T0oC2
+R3
+R16
+R17
+R18
+L0 29
+R7
+r1
+31
+R19
+R20
+R21
+R9
+!i10b 1
+!s85 0
+!s101 -O0
+vadd_sub_vlg_vec_tst
+Z25 IQFo9EUTC7?QXlilDTb9dn2
+Z26 VeLSSU4hk@mPWcnhOYmCi<3
+R3
+R16
+R17
+R18
+Z27 L0 740
+R7
+r1
+31
+R19
+R20
+R21
+R9
+Z28 !s100 =8iTeO=4WN29cbY1UCSh[1
+!i10b 1
+!s85 0
+!s101 -O0
+vmux21_1b
+Z29 IYL?gSRVcCn>oEPao0`:SK1
+Z30 VXTFG@LFDncHQLFOUY<_5D2
+Z31 dD:\Workspace\FPGA\RISC_V_quartus13_1\simulation\qsim
+Z32 w1685665184
+R5
+R6
+L0 31
+R7
+r1
+31
+R9
+Z33 !s100 k=WQi;2GHdPD^Ya^c7>[^3
+Z34 !s108 1685665185.704000
+R12
+R8
+!i10b 1
+!s85 0
+!s101 -O0
+vmux21_1b_vlg_check_tst
+Z35 I3Fd;hjc;d?@76fkZ7G:D=0
+Z36 VE1BQ?EaYWcCmUJV>3Df`C2
+R31
+Z37 w1685665183
+Z38 8teste_mux21_1b.vwf.vt
+Z39 Fteste_mux21_1b.vwf.vt
+L0 61
+R7
+r1
+31
+Z40 !s108 1685665185.861000
+Z41 !s107 teste_mux21_1b.vwf.vt|
+Z42 !s90 -work|work|teste_mux21_1b.vwf.vt|
+R9
+Z43 !s100 W8hD[RT3Jm7=<zX`QbnPS0
+!i10b 1
+!s85 0
+!s101 -O0
+vmux21_1b_vlg_sample_tst
+Z44 IO9:n>aOB`]ZjTEbFAA@1B1
+Z45 VVJWSfaOLo4DiPMIha:]>j0
+R31
+R37
+R38
+R39
+L0 29
+R7
+r1
+31
+R40
+R41
+R42
+R9
+Z46 !s100 Foio4[JV8chYa7h]Y[hC?1
+!i10b 1
+!s85 0
+!s101 -O0
+vmux21_1b_vlg_vec_tst
+Z47 IW?kWBVNXGlenAdEgO9Nl=3
+Z48 VhlR<YDBboOJP_GnIC@60F0
+R31
+R37
+R38
+R39
+Z49 L0 156
+R7
+r1
+31
+R40
+R41
+R42
+R9
+Z50 !s100 _Ol5T`E@gMgS]XF4ULz=c0
+!i10b 1
+!s85 0
+!s101 -O0
+vmux21_32b
+Z51 I3jInkecKkFh>dhK94=>881
+Z52 V[OMZoTXjdX>d@4U5cHeS[3
+R31
+Z53 w1685665346
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z54 !s100 nGF]`BBV@AFElD6ANi9Ol2
+Z55 !s108 1685665349.725000
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vmux21_32b_vlg_check_tst
+Z56 IFF>K`_9Q`GZkioc^H<<AP3
+Z57 V98ilP0TBDP3A2nH`i;g822
+R31
+Z58 w1685665345
+Z59 8teste_mux21_32b.vwf.vt
+Z60 Fteste_mux21_32b.vwf.vt
+L0 61
+R7
+r1
+31
+Z61 !s108 1685665349.882000
+Z62 !s107 teste_mux21_32b.vwf.vt|
+Z63 !s90 -work|work|teste_mux21_32b.vwf.vt|
+R9
+Z64 !s100 >XXMdnizKRH7SM5j0RgcN1
+!i10b 1
+!s85 0
+!s101 -O0
+vmux21_32b_vlg_sample_tst
+Z65 IO<ikIQSMYhO7PPE1oAfL11
+Z66 VM`BfOhK3SelGOEeI]RMOL2
+R31
+R58
+R59
+R60
+L0 29
+R7
+r1
+31
+R61
+R62
+R63
+R9
+Z67 !s100 R:1OZ3fdY48>8MScQCa681
+!i10b 1
+!s85 0
+!s101 -O0
+vmux21_32b_vlg_vec_tst
+Z68 IZ`W1[FA47]K_hff7;RLg<0
+Z69 Vj;Qd6>3BG<JnH]iIDO3IG3
+R31
+R58
+R59
+R60
+Z70 L0 713
+R7
+r1
+31
+R61
+R62
+R63
+R9
+Z71 !s100 Jg0nJJ6B=nPP_DZeaVCOA3
+!i10b 1
+!s85 0
+!s101 -O0
+vrisc_v32i
+Z72 I^VaV=1dlQiaYf>gDz6;Ga0
+Z73 VA2Kdj@j=SjQJn`VENa9Xl2
+R3
+Z74 w1686097656
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+!i10b 1
+Z75 !s100 cFNV15Z=dBcY>IUY`@d0L0
+!s85 0
+Z76 !s108 1686097659.205000
+R12
+!s101 -O0
+vrisc_v32i_vlg_check_tst
+!i10b 1
+Z77 !s100 Z7oj2_mTlHUbL3zj[K7WL1
+Z78 I[bf:QSJ7nBSkLASXbT3oh2
+Z79 VD@3nbBe>SDLL3VgOD_zW?0
+R3
+Z80 w1686097654
+Z81 8teste_risc_v.vwf.vt
+Z82 Fteste_risc_v.vwf.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z83 !s108 1686097659.524000
+Z84 !s107 teste_risc_v.vwf.vt|
+Z85 !s90 -work|work|teste_risc_v.vwf.vt|
+!s101 -O0
+R9
+vrisc_v32i_vlg_sample_tst
+!i10b 1
+Z86 !s100 @;_RNSh`Xfz2ig0H=c8@[2
+Z87 I094C;>Nj5N]X51NL2z13`3
+Z88 V7W<nkR1Zhj3OXg>aSh_]d1
+R3
+R80
+R81
+R82
+L0 29
+R7
+r1
+!s85 0
+31
+R83
+R84
+R85
+!s101 -O0
+R9
+vrisc_v32i_vlg_vec_tst
+!i10b 1
+Z89 !s100 c37^EY[l`?Xi<X_cX>Bzl1
+Z90 I;R^maodi?K6b]V9VgHGPM1
+Z91 VboV;EYL@AHUPV:V?og72Y1
+R3
+R80
+R81
+R82
+Z92 L0 3685
+R7
+r1
+!s85 0
+31
+R83
+R84
+R85
+!s101 -O0
+R9
