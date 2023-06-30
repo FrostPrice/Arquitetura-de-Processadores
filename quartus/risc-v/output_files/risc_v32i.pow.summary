@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Tue Jun 20 07:30:12 2023
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : risc_v32i
+Top-level Entity Name : risc_v32i
+Family : Arria II GX
+Device : EP2AGX45DF25I3
+Power Models : Final
+Total Thermal Power Dissipation : 336.98 mW
+Core Dynamic Thermal Power Dissipation : 0.00 mW
+Core Static Thermal Power Dissipation : 317.81 mW
+I/O Thermal Power Dissipation : 19.17 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data
