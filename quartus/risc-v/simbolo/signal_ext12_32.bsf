@@ -41,8 +41,8 @@ https://fpgasoftware.intel.com/eula.
 	(port
 		(pt 0 64)
 		(input)
-		(text "i_SEL_OP" (rect 0 0 56 15)(font "Intel Clear" (font_size 8)))
-		(text "i_SEL_OP" (rect 21 59 77 74)(font "Intel Clear" (font_size 8)))
+		(text "i_BRANCH_OP" (rect 0 0 83 15)(font "Intel Clear" (font_size 8)))
+		(text "i_BRANCH_OP" (rect 21 59 104 74)(font "Intel Clear" (font_size 8)))
 		(line (pt 0 64)(pt 16 64))
 	)
 	(port

@@ -10868,162 +10868,64 @@ i_B => inst4.IN1
 o_COUT <= inst5.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|risc_v32i|shift_left_logic:inst22
-i_RS1[0] => ShiftLeft0.IN32
-i_RS1[1] => ShiftLeft0.IN31
-i_RS1[2] => ShiftLeft0.IN30
-i_RS1[3] => ShiftLeft0.IN29
-i_RS1[4] => ShiftLeft0.IN28
-i_RS1[5] => ShiftLeft0.IN27
-i_RS1[6] => ShiftLeft0.IN26
-i_RS1[7] => ShiftLeft0.IN25
-i_RS1[8] => ShiftLeft0.IN24
-i_RS1[9] => ShiftLeft0.IN23
-i_RS1[10] => ShiftLeft0.IN22
-i_RS1[11] => ShiftLeft0.IN21
-i_RS1[12] => ShiftLeft0.IN20
-i_RS1[13] => ShiftLeft0.IN19
-i_RS1[14] => ShiftLeft0.IN18
-i_RS1[15] => ShiftLeft0.IN17
-i_RS1[16] => ShiftLeft0.IN16
-i_RS1[17] => ShiftLeft0.IN15
-i_RS1[18] => ShiftLeft0.IN14
-i_RS1[19] => ShiftLeft0.IN13
-i_RS1[20] => ShiftLeft0.IN12
-i_RS1[21] => ShiftLeft0.IN11
-i_RS1[22] => ShiftLeft0.IN10
-i_RS1[23] => ShiftLeft0.IN9
-i_RS1[24] => ShiftLeft0.IN8
-i_RS1[25] => ShiftLeft0.IN7
-i_RS1[26] => ShiftLeft0.IN6
-i_RS1[27] => ShiftLeft0.IN5
-i_RS1[28] => ShiftLeft0.IN4
-i_RS1[29] => ShiftLeft0.IN3
-i_RS1[30] => ShiftLeft0.IN2
-i_RS1[31] => ShiftLeft0.IN1
-i_RS2_lower5[0] => ShiftLeft0.IN37
-i_RS2_lower5[1] => ShiftLeft0.IN36
-i_RS2_lower5[2] => ShiftLeft0.IN35
-i_RS2_lower5[3] => ShiftLeft0.IN34
-i_RS2_lower5[4] => ShiftLeft0.IN33
-o_SLL[0] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[1] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[2] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[3] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[4] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[5] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[6] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[7] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[8] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[9] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[10] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[11] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[12] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[13] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[14] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[15] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[16] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[17] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[18] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[19] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[20] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[21] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[22] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[23] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[24] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[25] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[26] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[27] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[28] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[29] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[30] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-o_SLL[31] <= ShiftLeft0.DB_MAX_OUTPUT_PORT_TYPE
-
-
 |risc_v32i|signal_ext12_32:inst2
 o_DATA[0] <= mux21_1b:inst36.o_S
 o_DATA[1] <= mux21_1b:inst37.o_S
 o_DATA[2] <= mux21_1b:inst39.o_S
 o_DATA[3] <= mux21_1b:inst41.o_S
-o_DATA[4] <= mux21_1b:inst43.o_S
-o_DATA[5] <= i_DATA[5].DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[4] <= mux21_1b:inst42.o_S
+o_DATA[5] <= <GND>
 o_DATA[6] <= i_DATA[6].DB_MAX_OUTPUT_PORT_TYPE
 o_DATA[7] <= i_DATA[7].DB_MAX_OUTPUT_PORT_TYPE
 o_DATA[8] <= i_DATA[8].DB_MAX_OUTPUT_PORT_TYPE
 o_DATA[9] <= i_DATA[9].DB_MAX_OUTPUT_PORT_TYPE
 o_DATA[10] <= i_DATA[10].DB_MAX_OUTPUT_PORT_TYPE
-o_DATA[11] <= i_DATA[11].DB_MAX_OUTPUT_PORT_TYPE
-o_DATA[12] <= i_DATA[11].DB_MAX_OUTPUT_PORT_TYPE
-o_DATA[13] <= i_DATA[11].DB_MAX_OUTPUT_PORT_TYPE
-o_DATA[14] <= i_DATA[11].DB_MAX_OUTPUT_PORT_TYPE
-o_DATA[15] <= i_DATA[11].DB_MAX_OUTPUT_PORT_TYPE
-o_DATA[16] <= i_DATA[11].DB_MAX_OUTPUT_PORT_TYPE
-o_DATA[17] <= i_DATA[11].DB_MAX_OUTPUT_PORT_TYPE
-o_DATA[18] <= i_DATA[11].DB_MAX_OUTPUT_PORT_TYPE
-o_DATA[19] <= i_DATA[11].DB_MAX_OUTPUT_PORT_TYPE
-o_DATA[20] <= i_DATA[11].DB_MAX_OUTPUT_PORT_TYPE
-o_DATA[21] <= i_DATA[11].DB_MAX_OUTPUT_PORT_TYPE
-o_DATA[22] <= i_DATA[11].DB_MAX_OUTPUT_PORT_TYPE
-o_DATA[23] <= i_DATA[11].DB_MAX_OUTPUT_PORT_TYPE
-o_DATA[24] <= i_DATA[11].DB_MAX_OUTPUT_PORT_TYPE
-o_DATA[25] <= i_DATA[11].DB_MAX_OUTPUT_PORT_TYPE
-o_DATA[26] <= i_DATA[11].DB_MAX_OUTPUT_PORT_TYPE
-o_DATA[27] <= i_DATA[11].DB_MAX_OUTPUT_PORT_TYPE
-o_DATA[28] <= i_DATA[11].DB_MAX_OUTPUT_PORT_TYPE
-o_DATA[29] <= i_DATA[11].DB_MAX_OUTPUT_PORT_TYPE
-o_DATA[30] <= i_DATA[11].DB_MAX_OUTPUT_PORT_TYPE
-o_DATA[31] <= i_DATA[11].DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[11] <= mux21_1b:inst40.o_S
+o_DATA[12] <= mux21_1b:inst43.o_S
+o_DATA[13] <= inst80.DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[14] <= inst83.DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[15] <= inst84.DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[16] <= inst73.DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[17] <= inst72.DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[18] <= inst70.DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[19] <= inst71.DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[20] <= inst21.DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[21] <= inst22.DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[22] <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[23] <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[24] <= inst25.DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[25] <= inst26.DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[26] <= inst27.DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[27] <= inst28.DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[28] <= inst29.DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[29] <= inst30.DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[30] <= inst31.DB_MAX_OUTPUT_PORT_TYPE
+o_DATA[31] <= <GND>
 i_DATA[0] => mux21_1b:inst36.i_A
 i_DATA[1] => mux21_1b:inst37.i_A
 i_DATA[2] => mux21_1b:inst39.i_A
 i_DATA[3] => mux21_1b:inst41.i_A
-i_DATA[4] => mux21_1b:inst43.i_A
-i_DATA[4] => mux21_1b:inst43.i_B
-i_DATA[5] => o_DATA[5].DATAIN
+i_DATA[4] => mux21_1b:inst42.i_A
+i_DATA[5] => ~NO_FANOUT~
 i_DATA[6] => o_DATA[6].DATAIN
 i_DATA[7] => o_DATA[7].DATAIN
 i_DATA[8] => o_DATA[8].DATAIN
 i_DATA[9] => o_DATA[9].DATAIN
 i_DATA[10] => o_DATA[10].DATAIN
-i_DATA[11] => o_DATA[20].DATAIN
-i_DATA[11] => o_DATA[21].DATAIN
-i_DATA[11] => o_DATA[22].DATAIN
-i_DATA[11] => o_DATA[23].DATAIN
-i_DATA[11] => o_DATA[24].DATAIN
-i_DATA[11] => o_DATA[25].DATAIN
-i_DATA[11] => o_DATA[26].DATAIN
-i_DATA[11] => o_DATA[27].DATAIN
-i_DATA[11] => o_DATA[28].DATAIN
-i_DATA[11] => o_DATA[29].DATAIN
-i_DATA[11] => o_DATA[30].DATAIN
-i_DATA[11] => o_DATA[31].DATAIN
-i_DATA[11] => o_DATA[11].DATAIN
-i_DATA[11] => o_DATA[12].DATAIN
-i_DATA[11] => o_DATA[13].DATAIN
-i_DATA[11] => o_DATA[14].DATAIN
-i_DATA[11] => o_DATA[15].DATAIN
-i_DATA[11] => o_DATA[16].DATAIN
-i_DATA[11] => o_DATA[17].DATAIN
-i_DATA[11] => o_DATA[18].DATAIN
-i_DATA[11] => o_DATA[19].DATAIN
-i_SEL_OP => mux21_1b:inst43.i_SEL
-i_SEL_OP => mux21_1b:inst41.i_SEL
-i_SEL_OP => mux21_1b:inst39.i_SEL
-i_SEL_OP => mux21_1b:inst37.i_SEL
-i_SEL_OP => mux21_1b:inst36.i_SEL
-i_DATA_2[0] => ~NO_FANOUT~
-i_DATA_2[1] => mux21_1b:inst36.i_B
-i_DATA_2[2] => mux21_1b:inst37.i_B
-i_DATA_2[3] => mux21_1b:inst39.i_B
-i_DATA_2[4] => mux21_1b:inst41.i_B
-
-
-|risc_v32i|signal_ext12_32:inst2|mux21_1b:inst43
-o_S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
-i_SEL => inst1.IN0
-i_SEL => inst3.IN0
-i_B => inst1.IN1
-i_A => inst.IN0
+i_DATA[11] => mux21_1b:inst40.i_A
+i_DATA[11] => mux21_1b:inst43.i_B
+i_BRANCH_OP => mux21_1b:inst41.i_SEL
+i_BRANCH_OP => mux21_1b:inst39.i_SEL
+i_BRANCH_OP => mux21_1b:inst37.i_SEL
+i_BRANCH_OP => mux21_1b:inst36.i_SEL
+i_BRANCH_OP => mux21_1b:inst40.i_SEL
+i_BRANCH_OP => mux21_1b:inst43.i_SEL
+i_BRANCH_OP => mux21_1b:inst42.i_SEL
+i_DATA_2[0] => mux21_1b:inst40.i_B
+i_DATA_2[1] => mux21_1b:inst37.i_B
+i_DATA_2[2] => mux21_1b:inst39.i_B
+i_DATA_2[3] => mux21_1b:inst41.i_B
+i_DATA_2[4] => mux21_1b:inst42.i_B
 
 
 |risc_v32i|signal_ext12_32:inst2|mux21_1b:inst41
@@ -11058,12 +10960,28 @@ i_B => inst1.IN1
 i_A => inst.IN0
 
 
-|risc_v32i|LPM_CONSTANT:inst28
-result[0] <= <VCC>
-result[1] <= <GND>
-result[2] <= <GND>
-result[3] <= <GND>
-result[4] <= <GND>
+|risc_v32i|signal_ext12_32:inst2|mux21_1b:inst40
+o_S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+i_SEL => inst1.IN0
+i_SEL => inst3.IN0
+i_B => inst1.IN1
+i_A => inst.IN0
+
+
+|risc_v32i|signal_ext12_32:inst2|mux21_1b:inst43
+o_S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+i_SEL => inst1.IN0
+i_SEL => inst3.IN0
+i_B => inst1.IN1
+i_A => inst.IN0
+
+
+|risc_v32i|signal_ext12_32:inst2|mux21_1b:inst42
+o_S <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+i_SEL => inst1.IN0
+i_SEL => inst3.IN0
+i_B => inst1.IN1
+i_A => inst.IN0
 
 
 |risc_v32i|banco_registradores:inst6

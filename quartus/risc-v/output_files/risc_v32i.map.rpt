@@ -1,5 +1,5 @@
 Analysis & Synthesis report for risc_v32i
-Thu Jun 29 15:12:07 2023
+Fri Jun 30 14:21:41 2023
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -18,10 +18,9 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
  10. Removed Registers Triggering Further Register Optimizations
  11. General Register Statistics
  12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: LPM_CONSTANT:inst28
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+ 13. Post-Synthesis Netlist Statistics for Top Partition
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
@@ -48,13 +47,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +-----------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status       ; Successful - Thu Jun 29 15:12:06 2023       ;
+; Analysis & Synthesis Status       ; Successful - Fri Jun 30 14:21:41 2023       ;
 ; Quartus Prime Version             ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                     ; risc_v32i                                   ;
 ; Top-level Entity Name             ; risc_v32i                                   ;
 ; Family                            ; Arria II GX                                 ;
 ; Logic utilization                 ; N/A                                         ;
-;     Combinational ALUTs           ; 1,069                                       ;
+;     Combinational ALUTs           ; 1,065                                       ;
 ;     Memory ALUTs                  ; 0                                           ;
 ;     Dedicated logic registers     ; 1,023                                       ;
 ; Total registers                   ; 1023                                        ;
@@ -206,7 +205,6 @@ https://fpgasoftware.intel.com/eula.
 ; fontes/set_if_less_than.bdf      ; yes             ; User Block Diagram/Schematic File  ; /home/mateusbarbosa/Documents/Univali/arquitetura/quartus/risc-v/fontes/set_if_less_than.bdf    ;         ;
 ; fontes/comparator_32b.bdf        ; yes             ; User Block Diagram/Schematic File  ; /home/mateusbarbosa/Documents/Univali/arquitetura/quartus/risc-v/fontes/comparator_32b.bdf      ;         ;
 ; fontes/mux81_1b.bdf              ; yes             ; User Block Diagram/Schematic File  ; /home/mateusbarbosa/Documents/Univali/arquitetura/quartus/risc-v/fontes/mux81_1b.bdf            ;         ;
-; lpm_constant.tdf                 ; yes             ; Megafunction                       ; /home/mateusbarbosa/intelFPGA_lite/20.1/quartus/libraries/megafunctions/lpm_constant.tdf        ;         ;
 +----------------------------------+-----------------+------------------------------------+-------------------------------------------------------------------------------------------------+---------+
 
 
@@ -215,8 +213,8 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------+-------------+
 ; Resource                                      ; Usage       ;
 +-----------------------------------------------+-------------+
-; Estimated ALUTs Used                          ; 1069        ;
-;     -- Combinational ALUTs                    ; 1069        ;
+; Estimated ALUTs Used                          ; 1065        ;
+;     -- Combinational ALUTs                    ; 1065        ;
 ;     -- Memory ALUTs                           ; 0           ;
 ;     -- LUT_REGs                               ; 0           ;
 ; Dedicated logic registers                     ; 1023        ;
@@ -225,21 +223,21 @@ https://fpgasoftware.intel.com/eula.
 ;     -- Due to unpartnered combinational logic ; 36          ;
 ;     -- Due to Memory ALUTs                    ; 0           ;
 ;                                               ;             ;
-; Total combinational functions                 ; 1069        ;
+; Total combinational functions                 ; 1065        ;
 ; Combinational ALUT usage by number of inputs  ;             ;
 ;     -- 7 input functions                      ; 36          ;
-;     -- 6 input functions                      ; 534         ;
-;     -- 5 input functions                      ; 196         ;
-;     -- 4 input functions                      ; 112         ;
-;     -- <=3 input functions                    ; 191         ;
+;     -- 6 input functions                      ; 485         ;
+;     -- 5 input functions                      ; 239         ;
+;     -- 4 input functions                      ; 137         ;
+;     -- <=3 input functions                    ; 168         ;
 ;                                               ;             ;
 ; Combinational ALUTs by mode                   ;             ;
-;     -- normal mode                            ; 1018        ;
+;     -- normal mode                            ; 1029        ;
 ;     -- extended LUT mode                      ; 36          ;
-;     -- arithmetic mode                        ; 15          ;
+;     -- arithmetic mode                        ; 0           ;
 ;     -- shared arithmetic mode                 ; 0           ;
 ;                                               ;             ;
-; Estimated ALUT/register pairs used            ; 1865        ;
+; Estimated ALUT/register pairs used            ; 1863        ;
 ;                                               ;             ;
 ; Total registers                               ; 1023        ;
 ;     -- Dedicated logic registers              ; 1023        ;
@@ -253,8 +251,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                               ;             ;
 ; Maximum fan-out node                          ; i_CLK~input ;
 ; Maximum fan-out                               ; 1023        ;
-; Total fan-out                                 ; 9814        ;
-; Average fan-out                               ; 3.93        ;
+; Total fan-out                                 ; 9764        ;
+; Average fan-out                               ; 3.91        ;
 +-----------------------------------------------+-------------+
 
 
@@ -263,8 +261,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+-----------------------------------------------------------------------+------------------------+--------------+
 ; Compilation Hierarchy Node             ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 12x12 ; DSP 18x18 ; DSP 36x36 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                   ; Entity Name            ; Library Name ;
 +----------------------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+-----------------------------------------------------------------------+------------------------+--------------+
-; |risc_v32i                             ; 1069 (1)            ; 1023 (0)                  ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 203  ; 0            ; |risc_v32i                                                            ; risc_v32i              ; work         ;
-;    |PC:inst|                           ; 2 (2)               ; 31 (31)                   ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|PC:inst                                                    ; PC                     ; work         ;
+; |risc_v32i                             ; 1065 (1)            ; 1023 (0)                  ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 203  ; 0            ; |risc_v32i                                                            ; risc_v32i              ; work         ;
+;    |PC:inst|                           ; 4 (4)               ; 31 (31)                   ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|PC:inst                                                    ; PC                     ; work         ;
 ;    |add4:inst40|                       ; 15 (0)              ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add4:inst40                                                ; add4                   ; work         ;
 ;       |add_sub:inst2|                  ; 15 (0)              ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add4:inst40|add_sub:inst2                                  ; add_sub                ; work         ;
 ;          |full_adder:inst10|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add4:inst40|add_sub:inst2|full_adder:inst10                ; full_adder             ; work         ;
@@ -277,66 +275,66 @@ https://fpgasoftware.intel.com/eula.
 ;          |full_adder:inst23|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add4:inst40|add_sub:inst2|full_adder:inst23                ; full_adder             ; work         ;
 ;          |full_adder:inst25|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add4:inst40|add_sub:inst2|full_adder:inst25                ; full_adder             ; work         ;
 ;          |full_adder:inst27|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add4:inst40|add_sub:inst2|full_adder:inst27                ; full_adder             ; work         ;
-;          |full_adder:inst4|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add4:inst40|add_sub:inst2|full_adder:inst4                 ; full_adder             ; work         ;
+;          |full_adder:inst3|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add4:inst40|add_sub:inst2|full_adder:inst3                 ; full_adder             ; work         ;
 ;          |full_adder:inst6|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add4:inst40|add_sub:inst2|full_adder:inst6                 ; full_adder             ; work         ;
 ;          |full_adder:inst7|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add4:inst40|add_sub:inst2|full_adder:inst7                 ; full_adder             ; work         ;
-;          |full_adder:inst88|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add4:inst40|add_sub:inst2|full_adder:inst88                ; full_adder             ; work         ;
 ;          |full_adder:inst8|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add4:inst40|add_sub:inst2|full_adder:inst8                 ; full_adder             ; work         ;
-;    |add_sub:inst12|                    ; 20 (0)              ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12                                             ; add_sub                ; work         ;
+;          |full_adder:inst99|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add4:inst40|add_sub:inst2|full_adder:inst99                ; full_adder             ; work         ;
+;    |add_sub:inst12|                    ; 19 (0)              ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12                                             ; add_sub                ; work         ;
 ;       |full_adder:inst10|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst10                           ; full_adder             ; work         ;
 ;       |full_adder:inst12|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst12                           ; full_adder             ; work         ;
 ;       |full_adder:inst14|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst14                           ; full_adder             ; work         ;
 ;       |full_adder:inst16|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst16                           ; full_adder             ; work         ;
 ;       |full_adder:inst17|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst17                           ; full_adder             ; work         ;
 ;       |full_adder:inst19|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst19                           ; full_adder             ; work         ;
+;       |full_adder:inst1|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst1                            ; full_adder             ; work         ;
 ;       |full_adder:inst21|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst21                           ; full_adder             ; work         ;
 ;       |full_adder:inst23|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst23                           ; full_adder             ; work         ;
+;       |full_adder:inst25|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst25                           ; full_adder             ; work         ;
 ;       |full_adder:inst27|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst27                           ; full_adder             ; work         ;
-;       |full_adder:inst2|               ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst2                            ; full_adder             ; work         ;
+;       |full_adder:inst2|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst2                            ; full_adder             ; work         ;
 ;       |full_adder:inst3|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst3                            ; full_adder             ; work         ;
-;       |full_adder:inst4|               ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst4                            ; full_adder             ; work         ;
-;       |full_adder:inst5|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst5                            ; full_adder             ; work         ;
-;       |full_adder:inst6|               ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst6                            ; full_adder             ; work         ;
-;       |full_adder:inst7|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst7                            ; full_adder             ; work         ;
+;       |full_adder:inst4|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst4                            ; full_adder             ; work         ;
+;       |full_adder:inst6|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst6                            ; full_adder             ; work         ;
+;       |full_adder:inst7|               ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst7                            ; full_adder             ; work         ;
+;       |full_adder:inst88|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst88                           ; full_adder             ; work         ;
 ;       |full_adder:inst8|               ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst8                            ; full_adder             ; work         ;
-;       |full_adder:inst99|              ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|add_sub:inst12|full_adder:inst99                           ; full_adder             ; work         ;
-;    |alu:inst1|                         ; 396 (19)            ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1                                                  ; alu                    ; work         ;
-;       |add_sub:inst|                   ; 85 (29)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst                                     ; add_sub                ; work         ;
-;          |full_adder:inst10|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst10                   ; full_adder             ; work         ;
-;          |full_adder:inst11|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst11                   ; full_adder             ; work         ;
-;          |full_adder:inst12|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst12                   ; full_adder             ; work         ;
+;    |alu:inst1|                         ; 394 (19)            ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1                                                  ; alu                    ; work         ;
+;       |add_sub:inst|                   ; 61 (29)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst                                     ; add_sub                ; work         ;
+;          |full_adder:inst10|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst10                   ; full_adder             ; work         ;
+;          |full_adder:inst11|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst11                   ; full_adder             ; work         ;
+;          |full_adder:inst12|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst12                   ; full_adder             ; work         ;
 ;          |full_adder:inst13|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst13                   ; full_adder             ; work         ;
-;          |full_adder:inst14|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst14                   ; full_adder             ; work         ;
-;          |full_adder:inst15|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst15                   ; full_adder             ; work         ;
-;          |full_adder:inst16|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst16                   ; full_adder             ; work         ;
-;          |full_adder:inst17|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst17                   ; full_adder             ; work         ;
-;          |full_adder:inst18|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst18                   ; full_adder             ; work         ;
-;          |full_adder:inst19|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst19                   ; full_adder             ; work         ;
-;          |full_adder:inst1|            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst1                    ; full_adder             ; work         ;
-;          |full_adder:inst20|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst20                   ; full_adder             ; work         ;
-;          |full_adder:inst21|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst21                   ; full_adder             ; work         ;
-;          |full_adder:inst22|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst22                   ; full_adder             ; work         ;
-;          |full_adder:inst23|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst23                   ; full_adder             ; work         ;
-;          |full_adder:inst24|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst24                   ; full_adder             ; work         ;
-;          |full_adder:inst25|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst25                   ; full_adder             ; work         ;
-;          |full_adder:inst26|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst26                   ; full_adder             ; work         ;
-;          |full_adder:inst27|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst27                   ; full_adder             ; work         ;
+;          |full_adder:inst14|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst14                   ; full_adder             ; work         ;
+;          |full_adder:inst15|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst15                   ; full_adder             ; work         ;
+;          |full_adder:inst16|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst16                   ; full_adder             ; work         ;
+;          |full_adder:inst17|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst17                   ; full_adder             ; work         ;
+;          |full_adder:inst18|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst18                   ; full_adder             ; work         ;
+;          |full_adder:inst19|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst19                   ; full_adder             ; work         ;
+;          |full_adder:inst1|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst1                    ; full_adder             ; work         ;
+;          |full_adder:inst20|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst20                   ; full_adder             ; work         ;
+;          |full_adder:inst21|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst21                   ; full_adder             ; work         ;
+;          |full_adder:inst22|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst22                   ; full_adder             ; work         ;
+;          |full_adder:inst23|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst23                   ; full_adder             ; work         ;
+;          |full_adder:inst24|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst24                   ; full_adder             ; work         ;
+;          |full_adder:inst25|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst25                   ; full_adder             ; work         ;
+;          |full_adder:inst26|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst26                   ; full_adder             ; work         ;
+;          |full_adder:inst27|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst27                   ; full_adder             ; work         ;
 ;          |full_adder:inst28|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst28                   ; full_adder             ; work         ;
 ;          |full_adder:inst29|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst29                   ; full_adder             ; work         ;
 ;          |full_adder:inst2|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst2                    ; full_adder             ; work         ;
 ;          |full_adder:inst3|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst3                    ; full_adder             ; work         ;
 ;          |full_adder:inst4|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst4                    ; full_adder             ; work         ;
-;          |full_adder:inst5|            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst5                    ; full_adder             ; work         ;
+;          |full_adder:inst5|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst5                    ; full_adder             ; work         ;
 ;          |full_adder:inst6|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst6                    ; full_adder             ; work         ;
-;          |full_adder:inst7|            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst7                    ; full_adder             ; work         ;
-;          |full_adder:inst88|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst88                   ; full_adder             ; work         ;
-;          |full_adder:inst8|            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst8                    ; full_adder             ; work         ;
-;          |full_adder:inst99|           ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst99                   ; full_adder             ; work         ;
-;          |full_adder:inst9|            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst9                    ; full_adder             ; work         ;
-;       |comparator_32b:inst25|          ; 31 (0)              ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst25                            ; comparator_32b         ; work         ;
+;          |full_adder:inst7|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst7                    ; full_adder             ; work         ;
+;          |full_adder:inst88|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst88                   ; full_adder             ; work         ;
+;          |full_adder:inst8|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst8                    ; full_adder             ; work         ;
+;          |full_adder:inst99|           ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst99                   ; full_adder             ; work         ;
+;          |full_adder:inst9|            ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|add_sub:inst|full_adder:inst9                    ; full_adder             ; work         ;
+;       |comparator_32b:inst25|          ; 25 (0)              ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst25                            ; comparator_32b         ; work         ;
 ;          |comparator_1b:inst10|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst25|comparator_1b:inst10       ; comparator_1b          ; work         ;
 ;          |comparator_1b:inst11|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst25|comparator_1b:inst11       ; comparator_1b          ; work         ;
-;          |comparator_1b:inst12|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst25|comparator_1b:inst12       ; comparator_1b          ; work         ;
 ;          |comparator_1b:inst13|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst25|comparator_1b:inst13       ; comparator_1b          ; work         ;
 ;          |comparator_1b:inst14|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst25|comparator_1b:inst14       ; comparator_1b          ; work         ;
 ;          |comparator_1b:inst15|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst25|comparator_1b:inst15       ; comparator_1b          ; work         ;
@@ -355,74 +353,78 @@ https://fpgasoftware.intel.com/eula.
 ;          |comparator_1b:inst27|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst25|comparator_1b:inst27       ; comparator_1b          ; work         ;
 ;          |comparator_1b:inst28|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst25|comparator_1b:inst28       ; comparator_1b          ; work         ;
 ;          |comparator_1b:inst29|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst25|comparator_1b:inst29       ; comparator_1b          ; work         ;
-;          |comparator_1b:inst2|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst25|comparator_1b:inst2        ; comparator_1b          ; work         ;
 ;          |comparator_1b:inst30|        ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst25|comparator_1b:inst30       ; comparator_1b          ; work         ;
 ;          |comparator_1b:inst3|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst25|comparator_1b:inst3        ; comparator_1b          ; work         ;
-;          |comparator_1b:inst4|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst25|comparator_1b:inst4        ; comparator_1b          ; work         ;
-;          |comparator_1b:inst5|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst25|comparator_1b:inst5        ; comparator_1b          ; work         ;
 ;          |comparator_1b:inst6|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst25|comparator_1b:inst6        ; comparator_1b          ; work         ;
 ;          |comparator_1b:inst7|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst25|comparator_1b:inst7        ; comparator_1b          ; work         ;
-;          |comparator_1b:inst8|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst25|comparator_1b:inst8        ; comparator_1b          ; work         ;
-;          |comparator_1b:inst9|         ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst25|comparator_1b:inst9        ; comparator_1b          ; work         ;
 ;          |comparator_1b:inst|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst25|comparator_1b:inst         ; comparator_1b          ; work         ;
 ;       |comparator_32b:inst26|          ; 20 (0)              ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst26                            ; comparator_32b         ; work         ;
 ;          |comparator_1b:inst31|        ; 20 (20)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|comparator_32b:inst26|comparator_1b:inst31       ; comparator_1b          ; work         ;
-;       |mux81_1b:inst29|                ; 9 (0)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_1b:inst29                                  ; mux81_1b               ; work         ;
-;          |mux21_1b:inst6|              ; 9 (9)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_1b:inst29|mux21_1b:inst6                   ; mux21_1b               ; work         ;
-;       |mux81_32b:inst1|                ; 119 (0)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1                                  ; mux81_32b              ; work         ;
-;          |mux21_32b:inst12|            ; 119 (0)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12                 ; mux21_32b              ; work         ;
-;             |mux21_1b:inst10|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst10 ; mux21_1b               ; work         ;
-;             |mux21_1b:inst11|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst11 ; mux21_1b               ; work         ;
-;             |mux21_1b:inst12|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst12 ; mux21_1b               ; work         ;
-;             |mux21_1b:inst13|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst13 ; mux21_1b               ; work         ;
-;             |mux21_1b:inst14|          ; 3 (3)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst14 ; mux21_1b               ; work         ;
-;             |mux21_1b:inst15|          ; 7 (7)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst15 ; mux21_1b               ; work         ;
+;       |mux81_1b:inst29|                ; 12 (0)              ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_1b:inst29                                  ; mux81_1b               ; work         ;
+;          |mux21_1b:inst6|              ; 12 (12)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_1b:inst29|mux21_1b:inst6                   ; mux21_1b               ; work         ;
+;       |mux81_32b:inst1|                ; 148 (0)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1                                  ; mux81_32b              ; work         ;
+;          |mux21_32b:inst12|            ; 148 (0)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12                 ; mux21_32b              ; work         ;
+;             |mux21_1b:inst10|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst10 ; mux21_1b               ; work         ;
+;             |mux21_1b:inst11|          ; 6 (6)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst11 ; mux21_1b               ; work         ;
+;             |mux21_1b:inst12|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst12 ; mux21_1b               ; work         ;
+;             |mux21_1b:inst13|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst13 ; mux21_1b               ; work         ;
+;             |mux21_1b:inst14|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst14 ; mux21_1b               ; work         ;
+;             |mux21_1b:inst15|          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst15 ; mux21_1b               ; work         ;
 ;             |mux21_1b:inst16|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst16 ; mux21_1b               ; work         ;
-;             |mux21_1b:inst17|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst17 ; mux21_1b               ; work         ;
-;             |mux21_1b:inst18|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst18 ; mux21_1b               ; work         ;
-;             |mux21_1b:inst19|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst19 ; mux21_1b               ; work         ;
-;             |mux21_1b:inst1|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst1  ; mux21_1b               ; work         ;
-;             |mux21_1b:inst20|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst20 ; mux21_1b               ; work         ;
-;             |mux21_1b:inst21|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst21 ; mux21_1b               ; work         ;
-;             |mux21_1b:inst22|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst22 ; mux21_1b               ; work         ;
-;             |mux21_1b:inst23|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst23 ; mux21_1b               ; work         ;
-;             |mux21_1b:inst24|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst24 ; mux21_1b               ; work         ;
-;             |mux21_1b:inst25|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst25 ; mux21_1b               ; work         ;
-;             |mux21_1b:inst26|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst26 ; mux21_1b               ; work         ;
-;             |mux21_1b:inst27|          ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst27 ; mux21_1b               ; work         ;
-;             |mux21_1b:inst28|          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst28 ; mux21_1b               ; work         ;
-;             |mux21_1b:inst29|          ; 7 (7)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst29 ; mux21_1b               ; work         ;
+;             |mux21_1b:inst17|          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst17 ; mux21_1b               ; work         ;
+;             |mux21_1b:inst18|          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst18 ; mux21_1b               ; work         ;
+;             |mux21_1b:inst19|          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst19 ; mux21_1b               ; work         ;
+;             |mux21_1b:inst1|           ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst1  ; mux21_1b               ; work         ;
+;             |mux21_1b:inst20|          ; 6 (6)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst20 ; mux21_1b               ; work         ;
+;             |mux21_1b:inst21|          ; 6 (6)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst21 ; mux21_1b               ; work         ;
+;             |mux21_1b:inst22|          ; 6 (6)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst22 ; mux21_1b               ; work         ;
+;             |mux21_1b:inst23|          ; 6 (6)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst23 ; mux21_1b               ; work         ;
+;             |mux21_1b:inst24|          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst24 ; mux21_1b               ; work         ;
+;             |mux21_1b:inst25|          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst25 ; mux21_1b               ; work         ;
+;             |mux21_1b:inst26|          ; 6 (6)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst26 ; mux21_1b               ; work         ;
+;             |mux21_1b:inst27|          ; 6 (6)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst27 ; mux21_1b               ; work         ;
+;             |mux21_1b:inst28|          ; 8 (8)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst28 ; mux21_1b               ; work         ;
+;             |mux21_1b:inst29|          ; 6 (6)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst29 ; mux21_1b               ; work         ;
 ;             |mux21_1b:inst2|           ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst2  ; mux21_1b               ; work         ;
-;             |mux21_1b:inst30|          ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst30 ; mux21_1b               ; work         ;
+;             |mux21_1b:inst30|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst30 ; mux21_1b               ; work         ;
 ;             |mux21_1b:inst31|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst31 ; mux21_1b               ; work         ;
-;             |mux21_1b:inst3|           ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst3  ; mux21_1b               ; work         ;
-;             |mux21_1b:inst4|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst4  ; mux21_1b               ; work         ;
-;             |mux21_1b:inst5|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst5  ; mux21_1b               ; work         ;
-;             |mux21_1b:inst6|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst6  ; mux21_1b               ; work         ;
-;             |mux21_1b:inst7|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst7  ; mux21_1b               ; work         ;
-;             |mux21_1b:inst8|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst8  ; mux21_1b               ; work         ;
-;             |mux21_1b:inst9|           ; 3 (3)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst9  ; mux21_1b               ; work         ;
+;             |mux21_1b:inst3|           ; 7 (7)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst3  ; mux21_1b               ; work         ;
+;             |mux21_1b:inst4|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst4  ; mux21_1b               ; work         ;
+;             |mux21_1b:inst5|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst5  ; mux21_1b               ; work         ;
+;             |mux21_1b:inst6|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst6  ; mux21_1b               ; work         ;
+;             |mux21_1b:inst7|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst7  ; mux21_1b               ; work         ;
+;             |mux21_1b:inst8|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst8  ; mux21_1b               ; work         ;
+;             |mux21_1b:inst9|           ; 4 (4)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst9  ; mux21_1b               ; work         ;
 ;             |mux21_1b:inst|            ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst   ; mux21_1b               ; work         ;
-;       |shift_left_logic:inst3|         ; 46 (46)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|shift_left_logic:inst3                           ; shift_left_logic       ; work         ;
-;       |srl_sra:inst7|                  ; 67 (0)              ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|srl_sra:inst7                                    ; srl_sra                ; work         ;
-;          |mux21_32b:inst2|             ; 2 (0)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|srl_sra:inst7|mux21_32b:inst2                    ; mux21_32b              ; work         ;
+;       |shift_left_logic:inst3|         ; 40 (40)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|shift_left_logic:inst3                           ; shift_left_logic       ; work         ;
+;       |srl_sra:inst7|                  ; 69 (0)              ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|srl_sra:inst7                                    ; srl_sra                ; work         ;
+;          |mux21_32b:inst2|             ; 3 (0)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|srl_sra:inst7|mux21_32b:inst2                    ; mux21_32b              ; work         ;
 ;             |mux21_1b:inst16|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|srl_sra:inst7|mux21_32b:inst2|mux21_1b:inst16    ; mux21_1b               ; work         ;
+;             |mux21_1b:inst30|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|srl_sra:inst7|mux21_32b:inst2|mux21_1b:inst30    ; mux21_1b               ; work         ;
 ;             |mux21_1b:inst31|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|srl_sra:inst7|mux21_32b:inst2|mux21_1b:inst31    ; mux21_1b               ; work         ;
 ;          |shift_right_arithmetic:inst| ; 18 (18)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|srl_sra:inst7|shift_right_arithmetic:inst        ; shift_right_arithmetic ; work         ;
-;          |shift_right_logic:inst1|     ; 47 (47)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|srl_sra:inst7|shift_right_logic:inst1            ; shift_right_logic      ; work         ;
-;    |banco_registradores:inst6|         ; 490 (490)           ; 992 (992)                 ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|banco_registradores:inst6                                  ; banco_registradores    ; work         ;
+;          |shift_right_logic:inst1|     ; 48 (48)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|alu:inst1|srl_sra:inst7|shift_right_logic:inst1            ; shift_right_logic      ; work         ;
+;    |banco_registradores:inst6|         ; 495 (495)           ; 992 (992)                 ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|banco_registradores:inst6                                  ; banco_registradores    ; work         ;
 ;    |controle:inst10|                   ; 5 (5)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|controle:inst10                                            ; controle               ; work         ;
-;    |memoria_instrucao:inst5|           ; 88 (88)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|memoria_instrucao:inst5                                    ; memoria_instrucao      ; work         ;
-;    |mux21_32b:inst4|                   ; 19 (0)              ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4                                            ; mux21_32b              ; work         ;
+;    |memoria_instrucao:inst5|           ; 69 (69)             ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|memoria_instrucao:inst5                                    ; memoria_instrucao      ; work         ;
+;    |mux21_32b:inst4|                   ; 27 (0)              ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4                                            ; mux21_32b              ; work         ;
+;       |mux21_1b:inst11|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst11                            ; mux21_1b               ; work         ;
+;       |mux21_1b:inst12|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst12                            ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst13|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst13                            ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst14|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst14                            ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst17|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst17                            ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst18|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst18                            ; mux21_1b               ; work         ;
+;       |mux21_1b:inst19|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst19                            ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst1|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst1                             ; mux21_1b               ; work         ;
+;       |mux21_1b:inst20|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst20                            ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst21|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst21                            ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst22|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst22                            ; mux21_1b               ; work         ;
+;       |mux21_1b:inst23|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst23                            ; mux21_1b               ; work         ;
+;       |mux21_1b:inst24|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst24                            ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst25|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst25                            ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst26|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst26                            ; mux21_1b               ; work         ;
+;       |mux21_1b:inst27|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst27                            ; mux21_1b               ; work         ;
+;       |mux21_1b:inst28|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst28                            ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst29|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst29                            ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst2|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst2                             ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst30|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst30                            ; mux21_1b               ; work         ;
@@ -433,7 +435,8 @@ https://fpgasoftware.intel.com/eula.
 ;       |mux21_1b:inst7|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst7                             ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst8|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst8                             ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst|                  ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst4|mux21_1b:inst                              ; mux21_1b               ; work         ;
-;    |mux21_32b:inst7|                   ; 29 (0)              ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst7                                            ; mux21_32b              ; work         ;
+;    |mux21_32b:inst7|                   ; 27 (0)              ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst7                                            ; mux21_32b              ; work         ;
+;       |mux21_1b:inst10|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst7|mux21_1b:inst10                            ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst11|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst7|mux21_1b:inst11                            ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst12|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst7|mux21_1b:inst12                            ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst13|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst7|mux21_1b:inst13                            ; mux21_1b               ; work         ;
@@ -455,19 +458,19 @@ https://fpgasoftware.intel.com/eula.
 ;       |mux21_1b:inst29|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst7|mux21_1b:inst29                            ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst2|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst7|mux21_1b:inst2                             ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst30|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst7|mux21_1b:inst30                            ; mux21_1b               ; work         ;
-;       |mux21_1b:inst31|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst7|mux21_1b:inst31                            ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst3|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst7|mux21_1b:inst3                             ; mux21_1b               ; work         ;
-;       |mux21_1b:inst4|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst7|mux21_1b:inst4                             ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst5|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst7|mux21_1b:inst5                             ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst6|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst7|mux21_1b:inst6                             ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst7|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst7|mux21_1b:inst7                             ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst8|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst7|mux21_1b:inst8                             ; mux21_1b               ; work         ;
-;       |mux21_1b:inst9|                 ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|mux21_32b:inst7|mux21_1b:inst9                             ; mux21_1b               ; work         ;
-;    |signal_ext12_32:inst2|             ; 4 (0)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|signal_ext12_32:inst2                                      ; signal_ext12_32        ; work         ;
-;       |mux21_1b:inst36|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|signal_ext12_32:inst2|mux21_1b:inst36                      ; mux21_1b               ; work         ;
+;    |signal_ext12_32:inst2|             ; 9 (0)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|signal_ext12_32:inst2                                      ; signal_ext12_32        ; work         ;
+;       |mux21_1b:inst36|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|signal_ext12_32:inst2|mux21_1b:inst36                      ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst37|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|signal_ext12_32:inst2|mux21_1b:inst37                      ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst39|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|signal_ext12_32:inst2|mux21_1b:inst39                      ; mux21_1b               ; work         ;
+;       |mux21_1b:inst40|                ; 2 (2)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|signal_ext12_32:inst2|mux21_1b:inst40                      ; mux21_1b               ; work         ;
 ;       |mux21_1b:inst41|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|signal_ext12_32:inst2|mux21_1b:inst41                      ; mux21_1b               ; work         ;
+;       |mux21_1b:inst42|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|signal_ext12_32:inst2|mux21_1b:inst42                      ; mux21_1b               ; work         ;
+;       |mux21_1b:inst43|                ; 1 (1)               ; 0 (0)                     ; 0                 ; 0            ; 0       ; 0         ; 0         ; 0         ; 0    ; 0            ; |risc_v32i|signal_ext12_32:inst2|mux21_1b:inst43                      ; mux21_1b               ; work         ;
 +----------------------------------------+---------------------+---------------------------+-------------------+--------------+---------+-----------+-----------+-----------+------+--------------+-----------------------------------------------------------------------+------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -486,7 +489,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------+---------------------------------------------+
 ; Register name                              ; Reason for Removal                          ;
 +--------------------------------------------+---------------------------------------------+
-; PC:inst|o_PC[0]                            ; Stuck at GND due to stuck port data_in      ;
 ; banco_registradores:inst6|registers[0][0]  ; Stuck at GND due to stuck port clock_enable ;
 ; banco_registradores:inst6|registers[0][1]  ; Stuck at GND due to stuck port clock_enable ;
 ; banco_registradores:inst6|registers[0][2]  ; Stuck at GND due to stuck port clock_enable ;
@@ -519,40 +521,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; banco_registradores:inst6|registers[0][29] ; Stuck at GND due to stuck port clock_enable ;
 ; banco_registradores:inst6|registers[0][30] ; Stuck at GND due to stuck port clock_enable ;
 ; banco_registradores:inst6|registers[0][31] ; Stuck at GND due to stuck port clock_enable ;
+; PC:inst|o_PC[0]                            ; Stuck at GND due to stuck port data_in      ;
 ; Total Number of Removed Registers = 33     ;                                             ;
 +--------------------------------------------+---------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                               ;
-+-----------------+---------------------------+---------------------------------------------+
-; Register name   ; Reason for Removal        ; Registers Removed due to This Register      ;
-+-----------------+---------------------------+---------------------------------------------+
-; PC:inst|o_PC[0] ; Stuck at GND              ; banco_registradores:inst6|registers[0][2],  ;
-;                 ; due to stuck port data_in ; banco_registradores:inst6|registers[0][3],  ;
-;                 ;                           ; banco_registradores:inst6|registers[0][5],  ;
-;                 ;                           ; banco_registradores:inst6|registers[0][6],  ;
-;                 ;                           ; banco_registradores:inst6|registers[0][7],  ;
-;                 ;                           ; banco_registradores:inst6|registers[0][11], ;
-;                 ;                           ; banco_registradores:inst6|registers[0][12], ;
-;                 ;                           ; banco_registradores:inst6|registers[0][14], ;
-;                 ;                           ; banco_registradores:inst6|registers[0][15], ;
-;                 ;                           ; banco_registradores:inst6|registers[0][17], ;
-;                 ;                           ; banco_registradores:inst6|registers[0][18], ;
-;                 ;                           ; banco_registradores:inst6|registers[0][19], ;
-;                 ;                           ; banco_registradores:inst6|registers[0][20], ;
-;                 ;                           ; banco_registradores:inst6|registers[0][21], ;
-;                 ;                           ; banco_registradores:inst6|registers[0][22], ;
-;                 ;                           ; banco_registradores:inst6|registers[0][23], ;
-;                 ;                           ; banco_registradores:inst6|registers[0][24], ;
-;                 ;                           ; banco_registradores:inst6|registers[0][25], ;
-;                 ;                           ; banco_registradores:inst6|registers[0][26], ;
-;                 ;                           ; banco_registradores:inst6|registers[0][27], ;
-;                 ;                           ; banco_registradores:inst6|registers[0][28], ;
-;                 ;                           ; banco_registradores:inst6|registers[0][29], ;
-;                 ;                           ; banco_registradores:inst6|registers[0][30], ;
-;                 ;                           ; banco_registradores:inst6|registers[0][31]  ;
-+-----------------+---------------------------+---------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                               ;
++--------------------------------------------+--------------------------------+---------------------------------------------+
+; Register name                              ; Reason for Removal             ; Registers Removed due to This Register      ;
++--------------------------------------------+--------------------------------+---------------------------------------------+
+; banco_registradores:inst6|registers[0][1]  ; Stuck at GND                   ; banco_registradores:inst6|registers[0][2],  ;
+;                                            ; due to stuck port clock_enable ; banco_registradores:inst6|registers[0][3],  ;
+;                                            ;                                ; banco_registradores:inst6|registers[0][4],  ;
+;                                            ;                                ; banco_registradores:inst6|registers[0][5],  ;
+;                                            ;                                ; banco_registradores:inst6|registers[0][6],  ;
+;                                            ;                                ; banco_registradores:inst6|registers[0][7],  ;
+;                                            ;                                ; banco_registradores:inst6|registers[0][8],  ;
+;                                            ;                                ; banco_registradores:inst6|registers[0][9],  ;
+;                                            ;                                ; banco_registradores:inst6|registers[0][10], ;
+;                                            ;                                ; banco_registradores:inst6|registers[0][11], ;
+;                                            ;                                ; banco_registradores:inst6|registers[0][20], ;
+;                                            ;                                ; banco_registradores:inst6|registers[0][21], ;
+;                                            ;                                ; banco_registradores:inst6|registers[0][22], ;
+;                                            ;                                ; banco_registradores:inst6|registers[0][23], ;
+;                                            ;                                ; banco_registradores:inst6|registers[0][24], ;
+;                                            ;                                ; banco_registradores:inst6|registers[0][25], ;
+;                                            ;                                ; banco_registradores:inst6|registers[0][26], ;
+;                                            ;                                ; banco_registradores:inst6|registers[0][27], ;
+;                                            ;                                ; banco_registradores:inst6|registers[0][28], ;
+;                                            ;                                ; banco_registradores:inst6|registers[0][29], ;
+;                                            ;                                ; banco_registradores:inst6|registers[0][30], ;
+;                                            ;                                ; banco_registradores:inst6|registers[0][31]  ;
+; banco_registradores:inst6|registers[0][17] ; Stuck at GND                   ; banco_registradores:inst6|registers[0][18], ;
+;                                            ; due to stuck port clock_enable ; banco_registradores:inst6|registers[0][19]  ;
++--------------------------------------------+--------------------------------+---------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -575,36 +578,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
-; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |risc_v32i|alu:inst1|shift_left_logic:inst3|ShiftLeft0                      ;
-; 4:1                ; 49 bits   ; 98 ALUTs      ; 98 ALUTs             ; 0 ALUTs                ; No         ; |risc_v32i|alu:inst1|srl_sra:inst7|shift_right_logic:inst1|ShiftRight0      ;
+; 4:1                ; 2 bits    ; 4 ALUTs       ; 4 ALUTs              ; 0 ALUTs                ; No         ; |risc_v32i|alu:inst1|srl_sra:inst7|shift_right_logic:inst1|ShiftRight0      ;
+; 4:1                ; 49 bits   ; 98 ALUTs      ; 98 ALUTs             ; 0 ALUTs                ; No         ; |risc_v32i|alu:inst1|shift_left_logic:inst3|ShiftLeft0                      ;
 ; 4:1                ; 4 bits    ; 8 ALUTs       ; 8 ALUTs              ; 0 ALUTs                ; No         ; |risc_v32i|alu:inst1|srl_sra:inst7|shift_right_logic:inst1|ShiftRight0      ;
 ; 4:1                ; 4 bits    ; 8 ALUTs       ; 8 ALUTs              ; 0 ALUTs                ; No         ; |risc_v32i|alu:inst1|srl_sra:inst7|shift_right_arithmetic:inst|ShiftRight0  ;
 ; 4:1                ; 4 bits    ; 8 ALUTs       ; 8 ALUTs              ; 0 ALUTs                ; No         ; |risc_v32i|alu:inst1|shift_left_logic:inst3|ShiftLeft0                      ;
 ; 4:1                ; 4 bits    ; 8 ALUTs       ; 8 ALUTs              ; 0 ALUTs                ; No         ; |risc_v32i|alu:inst1|shift_left_logic:inst3|ShiftLeft0                      ;
 ; 4:1                ; 4 bits    ; 8 ALUTs       ; 8 ALUTs              ; 0 ALUTs                ; No         ; |risc_v32i|alu:inst1|shift_left_logic:inst3|ShiftLeft0                      ;
-; 8:1                ; 30 bits   ; 150 ALUTs     ; 150 ALUTs            ; 0 ALUTs                ; No         ; |risc_v32i|banco_registradores:inst6|Mux17                                  ;
-; 9:1                ; 2 bits    ; 12 ALUTs      ; 12 ALUTs             ; 0 ALUTs                ; No         ; |risc_v32i|banco_registradores:inst6|o_RS1[31]                              ;
-; 33:1               ; 32 bits   ; 704 ALUTs     ; 704 ALUTs            ; 0 ALUTs                ; No         ; |risc_v32i|banco_registradores:inst6|o_RS2[21]                              ;
-; 11:1               ; 11 bits   ; 77 ALUTs      ; 77 ALUTs             ; 0 ALUTs                ; No         ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst25|inst2 ;
-; 9:1                ; 4 bits    ; 24 ALUTs      ; 24 ALUTs             ; 0 ALUTs                ; No         ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst15|inst2 ;
-; 10:1               ; 5 bits    ; 30 ALUTs      ; 30 ALUTs             ; 0 ALUTs                ; No         ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst4|inst2  ;
-; 10:1               ; 3 bits    ; 18 ALUTs      ; 18 ALUTs             ; 0 ALUTs                ; No         ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst12|inst2 ;
-; 14:1               ; 3 bits    ; 27 ALUTs      ; 27 ALUTs             ; 0 ALUTs                ; No         ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst29|inst2 ;
-; 13:1               ; 3 bits    ; 24 ALUTs      ; 24 ALUTs             ; 0 ALUTs                ; No         ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst1|inst2  ;
+; 32:1               ; 30 bits   ; 630 ALUTs     ; 630 ALUTs            ; 0 ALUTs                ; No         ; |risc_v32i|banco_registradores:inst6|Mux15                                  ;
+; 33:1               ; 2 bits    ; 44 ALUTs      ; 44 ALUTs             ; 0 ALUTs                ; No         ; |risc_v32i|banco_registradores:inst6|o_RS1[31]                              ;
+; 33:1               ; 32 bits   ; 704 ALUTs     ; 704 ALUTs            ; 0 ALUTs                ; No         ; |risc_v32i|banco_registradores:inst6|o_RS2[19]                              ;
+; 14:1               ; 11 bits   ; 99 ALUTs      ; 99 ALUTs             ; 0 ALUTs                ; No         ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst24|inst2 ;
+; 12:1               ; 4 bits    ; 32 ALUTs      ; 32 ALUTs             ; 0 ALUTs                ; No         ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst11|inst2 ;
+; 13:1               ; 5 bits    ; 40 ALUTs      ; 40 ALUTs             ; 0 ALUTs                ; No         ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst6|inst2  ;
+; 13:1               ; 3 bits    ; 24 ALUTs      ; 24 ALUTs             ; 0 ALUTs                ; No         ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst13|inst2 ;
+; 17:1               ; 2 bits    ; 22 ALUTs      ; 22 ALUTs             ; 0 ALUTs                ; No         ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst28|inst2 ;
+; 16:1               ; 3 bits    ; 30 ALUTs      ; 30 ALUTs             ; 0 ALUTs                ; No         ; |risc_v32i|alu:inst1|mux81_32b:inst1|mux21_32b:inst12|mux21_1b:inst1|inst2  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: LPM_CONSTANT:inst28 ;
-+--------------------+------------------+--------------------------+
-; Parameter Name     ; Value            ; Type                     ;
-+--------------------+------------------+--------------------------+
-; LPM_WIDTH          ; 5                ; Untyped                  ;
-; LPM_CVALUE         ; 00001            ; Unsigned Binary          ;
-; ENABLE_RUNTIME_MOD ; NO               ; Untyped                  ;
-; CBXI_PARAMETER     ; lpm_constant_h84 ; Untyped                  ;
-+--------------------+------------------+--------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +-----------------------------------------------------+
@@ -616,21 +606,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     CLR               ; 31                          ;
 ;     ENA CLR           ; 992                         ;
 ; boundary_port         ; 203                         ;
-; stratixiv_lcell_comb  ; 1070                        ;
-;     arith             ; 15                          ;
-;         1 data inputs ; 15                          ;
+; stratixiv_lcell_comb  ; 1066                        ;
 ;     extend            ; 36                          ;
 ;         7 data inputs ; 36                          ;
-;     normal            ; 1019                        ;
+;     normal            ; 1030                        ;
 ;         0 data inputs ; 1                           ;
-;         2 data inputs ; 84                          ;
-;         3 data inputs ; 92                          ;
-;         4 data inputs ; 112                         ;
-;         5 data inputs ; 196                         ;
-;         6 data inputs ; 534                         ;
+;         2 data inputs ; 100                         ;
+;         3 data inputs ; 68                          ;
+;         4 data inputs ; 137                         ;
+;         5 data inputs ; 239                         ;
+;         6 data inputs ; 485                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 33.00                       ;
-; Average LUT depth     ; 20.58                       ;
+; Max LUT depth         ; 34.00                       ;
+; Average LUT depth     ; 20.78                       ;
 +-----------------------+-----------------------------+
 
 
@@ -639,7 +627,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:55     ;
+; Top            ; 00:01:11     ;
 +----------------+--------------+
 
 
@@ -649,7 +637,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Jun 29 15:11:04 2023
+    Info: Processing started: Fri Jun 30 14:20:22 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off risc_v32i -c risc_v32i
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -754,11 +742,8 @@ Info (12128): Elaborating entity "add4" for hierarchy "add4:inst40"
 Info (12128): Elaborating entity "lpm_constant0" for hierarchy "add4:inst40|lpm_constant0:inst"
 Info (12128): Elaborating entity "lpm_constant0_lpm_constant_v09" for hierarchy "add4:inst40|lpm_constant0:inst|lpm_constant0_lpm_constant_v09:lpm_constant0_lpm_constant_v09_component" File: /home/mateusbarbosa/Documents/Univali/arquitetura/quartus/risc-v/lpm_constant0.vhd Line: 86
 Info (12128): Elaborating entity "signal_ext12_32" for hierarchy "signal_ext12_32:inst2"
-Info (12128): Elaborating entity "LPM_CONSTANT" for hierarchy "LPM_CONSTANT:inst28"
-Info (12130): Elaborated megafunction instantiation "LPM_CONSTANT:inst28"
-Info (12133): Instantiated megafunction "LPM_CONSTANT:inst28" with the following parameter:
-    Info (12134): Parameter "LPM_CVALUE" = "00001"
-    Info (12134): Parameter "LPM_WIDTH" = "5"
+Warning (275008): Primitive "WIRE" of instance "inst32" not used
+Warning (275008): Primitive "WIRE" of instance "inst75" not used
 Info (12128): Elaborating entity "banco_registradores" for hierarchy "banco_registradores:inst6"
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "INSTRUCTION1[29]" is stuck at GND
@@ -768,18 +753,20 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "INSTRUCTION1[3]" is stuck at GND
     Warning (13410): Pin "INSTRUCTION1[2]" is stuck at GND
     Warning (13410): Pin "PC[0]" is stuck at GND
+    Warning (13410): Pin "SIG_EXT12_32[31]" is stuck at GND
     Warning (13410): Pin "SIG_EXT12_32[9]" is stuck at GND
+    Warning (13410): Pin "SIG_EXT12_32[5]" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 2264 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 2260 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 201 output pins
-    Info (21061): Implemented 2061 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 17 warnings
-    Info: Peak virtual memory: 668 megabytes
-    Info: Processing ended: Thu Jun 29 15:12:07 2023
-    Info: Elapsed time: 00:01:03
-    Info: Total CPU time (on all processors): 00:01:13
+    Info (21061): Implemented 2057 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
+    Info: Peak virtual memory: 669 megabytes
+    Info: Processing ended: Fri Jun 30 14:21:41 2023
+    Info: Elapsed time: 00:01:19
+    Info: Total CPU time (on all processors): 00:01:28
 
 

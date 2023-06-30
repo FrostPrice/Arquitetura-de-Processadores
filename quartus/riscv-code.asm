@@ -11,7 +11,7 @@
 	
 # Begin::Part_2
 	blt t1, t0, true_branch_1 # true
-	add t0, t0, t1 # Linha nao executada
+	add t1, t0, t1 # Linha nao executada
 	addi t1, t0, 1234 # Linha nao executada
 	
 true_branch_1:
@@ -20,15 +20,15 @@ true_branch_1:
 	addi s1, t0, 1 # Linha nao executada
 	
 false_branch_1: # Label nao executada
-	sub s0, t0, t1 # Linha nao executada
+	sub s10, t0, t1 # Linha nao executada
 		
 true_branch_2:
-	bge t1, t0, false_branch_3 # true
-	bge t0, t1, true_branch_3 # false
+	bge t1, t0, false_branch_3 # false
+	bge t0, t1, true_branch_3 # true
 	addi s1, t0, 1 # Linha nao executada
 	
 false_branch_3: # Label nao executada
-	sub s0, t0, t1 # Linha nao executada
+	sub s9, t0, t1 # Linha nao executada
 	
 true_branch_3:
 	beq t0, t1, false_branch_4 # false
@@ -36,7 +36,7 @@ true_branch_3:
 	beq t0, t1, true_branch_4 # true
 	
 false_branch_4: # Label nao executada
-	sub s0, t0, t1 # Linha nao executada
+	sub s8, t0, t1 # Linha nao executada
 	
 true_branch_4:
 	sub t0, t0, t1 # = 0

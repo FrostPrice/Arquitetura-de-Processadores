@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Thu Jun 29 15:12:06 2023
+Analysis & Synthesis Status : Successful - Fri Jun 30 14:21:41 2023
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : risc_v32i
 Top-level Entity Name : risc_v32i
 Family : Arria II GX
 Logic utilization : N/A
-    Combinational ALUTs : 1,069
+    Combinational ALUTs : 1,065
     Memory ALUTs : 0
     Dedicated logic registers : 1,023
 Total registers : 1023
