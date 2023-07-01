@@ -3,7 +3,7 @@ $comment
 		vcd file risc_v32i.msim.vcd -direction
 $end
 $date
-	Fri Jun 30 14:24:38 2023
+	Sat Jul  1 15:28:54 2023
 $end
 $version
 	ModelSim Version 2020.1

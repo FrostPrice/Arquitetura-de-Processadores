@@ -416,7 +416,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect 2328 -264 2496 -168)
+	(rect 992 -264 1160 -168)
 	(text "mux21_32b" (rect 5 0 72 13)(font "Arial" (font_size 8)))
 	(text "inst7" (rect 8 80 32 93)(font "Intel Clear" ))
 	(port
@@ -452,7 +452,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect 2216 -200 2280 -152)
+	(rect 880 -200 944 -152)
 	(text "AND2" (rect 1 0 29 10)(font "Arial" (font_size 6)))
 	(text "inst8" (rect 3 37 28 50)(font "Intel Clear" ))
 	(port
@@ -520,7 +520,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect 1928 -184 2120 -88)
+	(rect 592 -184 784 -88)
 	(text "add_sub" (rect 5 0 55 15)(font "Intel Clear" (font_size 8)))
 	(text "inst12" (rect 8 73 39 86)(font "Intel Clear" ))
 	(port
@@ -563,7 +563,7 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
-	(rect 1888 -96 1920 -64)
+	(rect 552 -96 584 -64)
 	(text "GND" (rect 8 16 30 26)(font "Arial" (font_size 6)))
 	(text "inst21" (rect 3 21 34 34)(font "Intel Clear" )(invisible))
 	(port
@@ -920,81 +920,6 @@ https://fpgasoftware.intel.com/eula.
 	(pt 1440 -344)
 )
 (connector
-	(pt 2304 -200)
-	(pt 2304 -176)
-)
-(connector
-	(pt 2144 -152)
-	(pt 2144 -216)
-	(bus)
-)
-(connector
-	(pt 2120 -152)
-	(pt 2144 -152)
-	(bus)
-)
-(connector
-	(pt 2280 -176)
-	(pt 2304 -176)
-)
-(connector
-	(pt 2496 -232)
-	(pt 2520 -232)
-	(bus)
-)
-(connector
-	(pt 2144 -216)
-	(pt 2328 -216)
-	(bus)
-)
-(connector
-	(pt 2304 -200)
-	(pt 2328 -200)
-)
-(connector
-	(text "w_DvC" (rect 2169 -200 2204 -187)(font "Intel Clear" ))
-	(pt 2168 -184)
-	(pt 2216 -184)
-)
-(connector
-	(text "w_Z" (rect 2170 -184 2192 -171)(font "Intel Clear" ))
-	(pt 2168 -168)
-	(pt 2216 -168)
-)
-(connector
-	(pt 2520 -288)
-	(pt 2520 -232)
-	(bus)
-)
-(connector
-	(pt 24 -288)
-	(pt 2520 -288)
-	(bus)
-)
-(connector
-	(pt 24 168)
-	(pt 24 -288)
-	(bus)
-)
-(connector
-	(pt 1928 -120)
-	(pt 1904 -120)
-)
-(connector
-	(pt 1904 -120)
-	(pt 1904 -96)
-)
-(connector
-	(pt 1928 -136)
-	(pt 1864 -136)
-	(bus)
-)
-(connector
-	(pt 1864 -136)
-	(pt 1864 -96)
-	(bus)
-)
-(connector
 	(pt 256 -232)
 	(pt 264 -232)
 	(bus)
@@ -1011,13 +936,80 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(pt 472 -232)
-	(pt 2328 -232)
+	(pt 968 -200)
+	(pt 968 -176)
+)
+(connector
+	(pt 808 -152)
+	(pt 808 -216)
 	(bus)
 )
 (connector
-	(pt 1928 -152)
+	(pt 808 -216)
+	(pt 992 -216)
+	(bus)
+)
+(connector
+	(pt 968 -200)
+	(pt 992 -200)
+)
+(connector
+	(text "w_DvC" (rect 833 -200 868 -187)(font "Intel Clear" ))
+	(pt 832 -184)
+	(pt 880 -184)
+)
+(connector
+	(text "w_Z" (rect 834 -184 856 -171)(font "Intel Clear" ))
+	(pt 832 -168)
+	(pt 880 -168)
+)
+(connector
+	(pt 1184 -288)
+	(pt 1184 -232)
+	(bus)
+)
+(connector
+	(pt 24 -288)
+	(pt 1184 -288)
+	(bus)
+)
+(connector
+	(pt 24 168)
+	(pt 24 -288)
+	(bus)
+)
+(connector
+	(pt 592 -120)
+	(pt 568 -120)
+)
+(connector
+	(pt 568 -120)
+	(pt 568 -96)
+)
+(connector
+	(pt 592 -136)
+	(pt 528 -136)
+	(bus)
+)
+(connector
+	(pt 472 -232)
+	(pt 992 -232)
+	(bus)
+)
+(connector
 	(pt 256 -152)
+	(pt 592 -152)
+	(bus)
+)
+(connector
+	(pt 528 -136)
+	(pt 528 -96)
+	(bus)
+)
+(connector
+	(text "w_SIG_EXT[31..0]" (rect 424 -112 513 -99)(font "Intel Clear" ))
+	(pt 528 -96)
+	(pt 416 -96)
 	(bus)
 )
 (connector
@@ -1031,12 +1023,30 @@ https://fpgasoftware.intel.com/eula.
 	(bus)
 )
 (connector
-	(text "w_SIG_EXT[31..0]" (rect 1536 -112 1625 -99)(font "Intel Clear" ))
-	(pt 1528 -96)
-	(pt 1864 -96)
+	(pt 1160 -232)
+	(pt 1184 -232)
+	(bus)
+)
+(connector
+	(pt 944 -176)
+	(pt 968 -176)
+)
+(connector
+	(pt 784 -152)
+	(pt 808 -152)
 	(bus)
 )
 (junction (pt 256 168))
 (junction (pt 256 -152))
 (text "Debug" (rect 1352 -704 1390 -689)(font "Intel Clear" (font_size 8)))
-(text "PC + SIG_EXT = Instrucao de Destino" (rect 1952 -72 2162 -57)(font "Intel Clear" (font_size 8)))
+(text "PC + SIG_EXT = Instrucao de Destino" (rect 616 -72 826 -57)(font "Intel Clear" (font_size 8)))
+(text "branch ? PC + Immed : PC + 4" (rect 1000 -160 1168 -145)(font "Intel Clear" (font_size 8)))
+(text "O signal_ext decodifica o immediato e rsd, ajustando os bits de acordo com a instrucao" (rect 1096 328 1590 343)(font "Intel Clear" (font_size 8)))
+(text "Formato I -> imm[11:0]" (rect 1096 360 1229 375)(font "Intel Clear" (font_size 8)))
+(text "Formato B -> imm[12] imm[11] imm [10:5] imm[4:1]" (rect 1096 344 1394 359)(font "Intel Clear" (font_size 8)))
+(text "Determina, de acordo com o formato da instrucao..." (rect 1200 216 1492 231)(font "Intel Clear" (font_size 8)))
+(text "...se deve usar o signal_ext ou o valor do rs2" (rect 1208 232 1458 247)(font "Intel Clear" (font_size 8)))
+(text "A ALU realizar as operacoes logicas e matematicas basicas..." (rect 1648 208 1987 223)(font "Intel Clear" (font_size 8)))
+(text "E tambem realizar as comparacoes para os branch (o_Z)" (rect 1648 224 1966 239)(font "Intel Clear" (font_size 8)))
+(text "Somente se for uma instrucao do tipo B (o_DvC)..." (rect 808 -136 1090 -121)(font "Intel Clear" (font_size 8)))
+(text "E a ALU retornar 1 para o o_Z que o target address eh usado" (rect 808 -120 1151 -105)(font "Intel Clear" (font_size 8)))

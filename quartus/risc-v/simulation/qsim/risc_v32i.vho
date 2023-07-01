@@ -17,7 +17,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
--- DATE "06/30/2023 14:24:36"
+-- DATE "07/01/2023 15:28:52"
 
 -- 
 -- Device: Altera EP2AGX45DF25I3 Package FBGA572
